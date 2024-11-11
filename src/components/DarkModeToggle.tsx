@@ -1,5 +1,4 @@
-// app/layout.tsx
-
+'use client'
 import UseDarkMode from '@/app/hooks/UseDarkMode';
 
 export default function DarkmodeToggle() {

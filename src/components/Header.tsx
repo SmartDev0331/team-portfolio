@@ -1,47 +1,53 @@
+'use client'
 
+import Link from "next/link";
 import DarkmodeToggle from "./DarkModeToggle";
 import Typography from "./Typography";
 
 const items = [
   {
-    name: "Article",
-    href: "/",
+    name: "Service",
+    href: "/#service",
   },
   {
-    name: "Gallery",
-    href: "/about",
+    name: "Team",
+    href: "/#team",
   },
   {
     name: "Features",
-    href: "/contact",
+    href: "/#feature",
   },
   {
-    name: "Othe_links",
-    href: "/other",
+    name: "Gallery",
+    href: "/#gallery",
+  },
+
+  {
+    name: "Contact",
+    href: "/Contact",
   },
 ];
 
 const Header = () => {
   return (
     <>
-      <div className="flex justify-center p-5 ">
+      <div className="flex justify-center p-5 sticky top-0 bg-slate-800 dark:bg-slate-100 z-20">
         <div className="flex flex-col gap-4 w-3/5 items-center md:flex-row md:justify-between duration-300 md:delay-100">
-          <div className="items-center text-[22px] text-sky-500 font-semibold">Dev_Squad</div>
+          <Typography className="items-center text-sky-500 font-semibold" size="h4">
+            <Link href="/#home">Dev_Squad</Link>
+          </Typography>
           <div className="flex">
-            <ul className="flex flex-row gap-4 list-none">
+            <ul className="flex flex-row gap-5 list-none">
               {
                 items.map((item, key) => (
-                  <li key={key}><Typography size="md">{item.name}</Typography></li>
+                  <Link key={key} href={item.href}><Typography size="paragraph" className="text-sm text-white transition-colors duration-300 dark:text-slate-800 hover:text-pink-600 ">{item.name}</Typography></Link>
                 ))
               }
             </ul>
           </div>
-
+          <DarkmodeToggle />
         </div>
 
-      </div>
-      <div>
-        <DarkmodeToggle />
       </div>
     </>
   )
