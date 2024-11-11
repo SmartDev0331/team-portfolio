@@ -21,7 +21,7 @@ const MemberCard = ({ item }: MemberCardProps) => {
           </div>
         </div>
         <div>
-          <Image src={item.Img as string} alt={item.name} width={300} height={300} className="w-20 h-20 rounded-full" />
+          <Image src={item.Img as string} alt={item.name} width="300" height="300" priority className="w-20 h-20 rounded-full" />
         </div>
       </div>
     </div>

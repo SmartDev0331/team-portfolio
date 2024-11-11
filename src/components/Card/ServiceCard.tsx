@@ -39,7 +39,7 @@ const ServiceCard = () => {
             <SwiperSlide className='bg-slate-400 dark:bg-slate-800 gap-15' key={key}>
               <div className="flex h-full">
                 <div className="flex flex-col gap-10 justify-between h-[400px]">
-                  <Image src={item.Img} width={500} height={500} alt={item.title} className='' layout='fill ' objectFit='cover' />
+                  <Image src={item.Img} width="500" priority height="500" alt={item.title} className='w-auto h-auto' />
                   <div className='h-[500px] pb-10 gap-5'>
                     <Typography size='h4'>{item.title}</Typography>
                     <Typography>{item.content}</Typography>

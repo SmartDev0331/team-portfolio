@@ -37,7 +37,7 @@ const PreviousCard = () => {
             <SwiperSlide className='bg-slate-400 dark:bg-slate-800 gap-15' key={key}>
               <div className="flex h-full">
                 <div className="flex flex-col gap-10 justify-between ">
-                  <Image src={item.Img} width={500} height={500} alt={item.title} className='' layout='fill ' objectFit='cover' />
+                  <Image src={item.Img} width={500} height={500} alt={item.title} className='' />
                   <div className='h-[300px]'>
                     <Typography size='h4'>{item.title}</Typography>
                     <Typography>{item.content}</Typography>

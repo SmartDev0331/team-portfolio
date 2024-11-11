@@ -15,7 +15,7 @@ const TeamVision = () => {
             Meet our team: developers who bring your vision to life with dynamic, high-impact solutions. We have walked the startup path, creating tech that matters and goes beyond the screen. With us, it’s not just code—it’s a partnership. Our blend of precision, passion, and cutting-edge expertise in AI and software development empowers innovation that resonates. Let’s build something extraordinary.
           </Typography>
         </div>
-        <Image src={images.teamVision} width={600} height={600} alt="vision" className="rounded-xl" />
+        <Image src={images.teamVision} width={600} height={600} alt="vision" priority className="rounded-xl w-auto h-auto" />
 
       </div>
     </div>

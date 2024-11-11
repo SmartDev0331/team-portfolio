@@ -37,7 +37,7 @@ const FeatureCard = () => {
             <SwiperSlide className='bg-slate-400 dark:bg-slate-800 gap-15' key={key}>
               <div className="flex">
                 <div className="flex flex-col gap-14 justify-between">
-                  <Image src={item.Img} width={500} height={500} alt={item.feature} className='h-[200]' />
+                  <Image src={item.Img} width="500" height="500" alt={item.feature} className='h-[200]' />
                   <div className='min-h-40'>
                     <Typography size='h4'>{item.feature}</Typography>
                     <Typography className='gap-3' size='paragraph'>{item.content}</Typography>
