@@ -2,7 +2,6 @@ import Link from "next/link"
 import InputComponent from "../InputComponent"
 import Typography from "../Typography"
 import { useState } from "react"
-import { ChangeEvent } from "react"
 
 const ContactComponent = () => {
 
@@ -35,8 +34,8 @@ const ContactComponent = () => {
           <Typography className="font-normal" size="h3">Get an estimate</Typography>
           <Typography size="paragraph" className="w-1/2">Do you already have specific requirements for your solution? Wondering how much it will cost to develop? Fill out this form and we will get back to you with a rough estimate.</Typography>
           <div className="flex justify-between w-full gap-10">
-            <div className="flex flex-col">
-              <InputComponent type="text" className="" label="Name" value={name} onChange={(e) => setName(e.target.value)} />
+            <div className="flex flex-col w-full">
+              <InputComponent type="text" className="w-full" label="Name" value={name} onChange={(e) => setName(e.target.value)} />
               {nameError === true ?
                 (<Typography className="text-rose-600 italic">Name is required</Typography>) : (<></>)
               }
@@ -44,7 +43,7 @@ const ContactComponent = () => {
             <InputComponent type="text" className="" label="Company (optional)" value={companyName} onChange={e => setCompanyName(e.target.value)} />
           </div>
           <div className="flex justify-between w-full gap-10">
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <InputComponent type="email" className="" label="Email" value={email} onChange={e => setEmail(e.target.value)} />
               {emailError === true ? (
                 <Typography className="text-rose-600 italic">Email is required</Typography>
@@ -53,7 +52,7 @@ const ContactComponent = () => {
             <InputComponent type="text" className="" label="Phone Number(optional)" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
           </div>
           <div>
-            <InputComponent className="" label="Company Website(if already exist)" />
+            <InputComponent className="" label="Company Website(if already exist)" value={website} onChange={e => setWebsite(e.target.value)} />
           </div>
           <button onClick={sendInfo}>
             <Typography size="subtitle-25" className="outline-2 outline-white">Send</Typography>

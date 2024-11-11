@@ -17,7 +17,7 @@ const LandingPage = () => {
             Here We are gonna share all about our professional<br></br> life works ,projects and all
           </Typography>
         </div>
-        <Image src={images.landing_image} className="md:block" alt="landing_image" width={500} height={500} style={{ color: "transparent", visibility: "visible" }} />
+        <Image src={images.landing_image} className="md:block" alt="landing_image" width={500} height={500} priority={false} placeholder='empty' style={{ color: "transparent", visibility: "visible" }} />
       </div>
     </div>
   )
