@@ -22,6 +22,20 @@ import vision from "../images/Team/vision.jpg"
 import teamVision from "../images/Team/teamVision.png"
 import Andew from "../images/feedback/Andrew.png"
 import Lenka from "../images/feedback/Lenka.png"
+import email from "./Icons/email.png"
+import phone from "./Icons/phone.png"
+import placeholder from "./Icons/placeholder.png"
+import twitter from "./Icons/twitter.png"
+import twitter_1 from "./Icons/social-media.png"
+import facebook from "./Icons/facebook-logo.png"
+import facebook_1 from "./Icons/facebook.png"
+import instegram from "./Icons/instagram.png"
+import instegram_1 from "./Icons/instagram-logo.png"
+import linkedIn from "./Icons/linkedin (1).png"
+import linkedIn_1 from "./Icons/linkedin (2).png"
+import Dmitrii from "../images/members/Dmitrii.png"
+import Lisa from "../images/members/Lisa.jpeg"
+import Kevin from "../images/members/Kevin.jpg"
 
 export const images = {
   landing_image,
@@ -47,5 +61,19 @@ export const images = {
   vision,
   teamVision,
   Andew,
-  Lenka
+  Lenka,
+  email,
+  phone,
+  placeholder,
+  twitter,
+  twitter_1,
+  facebook,
+  facebook_1,
+  instegram,
+  instegram_1,
+  linkedIn,
+  linkedIn_1,
+  Dmitrii,
+  Lisa,
+  Kevin
 }

@@ -3,16 +3,16 @@ import { images } from "../images"
 
 export const previous_items = [
   {
-    Img: images.voice_agent,
-    url: "https://voagents.ai/",
-    title: "AI Voice Agent",
-    content: "AI voice assistants to make outbound calls, answer inbound calls, and schedule appointments 24/7! Experience efficient, human-like conversations and simplified customer support for comprehensive assistance."
-  },
-  {
     Img: images.dante,
     url: "https://www.dante-ai.com/",
     title: "AI Agent Service",
     content: "Dante AI is your ultimate partner that unlocks remarkable, hyper personalized AI interactions."
+  },
+  {
+    Img: images.voice_agent,
+    url: "https://voagents.ai/",
+    title: "AI Voice Agent",
+    content: "AI voice assistants to make outbound calls, answer inbound calls, and schedule appointments 24/7! Experience efficient, human-like conversations and simplified customer support for comprehensive assistance."
   },
   {
     Img: images.basketBall_analysis,

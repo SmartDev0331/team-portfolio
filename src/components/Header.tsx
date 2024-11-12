@@ -24,7 +24,7 @@ const items = [
 
   {
     name: "Contact",
-    href: "/Contact",
+    href: "/#contact",
   },
 ];
 

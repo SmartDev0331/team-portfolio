@@ -12,6 +12,7 @@ import IntroService from "@/components/IntroService/IntroService";
 import TeamVision from "@/components/TeamVision/TeamVision";
 import Pledge from "@/components/Pledge/Pledge";
 import TestiMonial from "@/components/TestiMonial/TestiMonial";
+import ContactInfo from "@/components/ContactInfor";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false)
@@ -35,6 +36,7 @@ export default function Home() {
             <Features />
             <Pledge />
             <TestiMonial />
+            <ContactInfo />
           </main>
           <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
             <a

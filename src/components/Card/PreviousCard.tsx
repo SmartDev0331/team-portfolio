@@ -10,6 +10,7 @@ import Typography from '../Typography';
 import Image from 'next/image';
 import { useState } from 'react';
 import useWindowSize from '../../app/hooks/UseWindowSize';
+import Link from 'next/link';
 
 const PreviousCard = () => {
   const { width } = useWindowSize();
@@ -37,9 +38,13 @@ const PreviousCard = () => {
             <SwiperSlide className='bg-slate-400 dark:bg-slate-800 gap-15' key={key}>
               <div className="flex h-full">
                 <div className="flex flex-col gap-10 justify-between ">
+
                   <Image src={item.Img} width={500} height={500} alt={item.title} className='' />
+
                   <div className='h-[300px]'>
-                    <Typography size='h4'>{item.title}</Typography>
+                    <Link href={item.url} target='_blank'>
+                      <Typography size='h4' className='hover:cursor-pointer'>{item.title}</Typography>
+                    </Link>
                     <Typography>{item.content}</Typography>
                   </div>
                 </div>
